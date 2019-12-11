@@ -8,12 +8,13 @@ This projects has the source code of the viewpoint and the generated and package
 ### Prerequisites
 To change in the source code you will need to have:
 * [Capella Studio](https://www.eclipse.org/capella/download.html) - Open source SDK to develop Capella add-ons
+
 To use the packaged version of the project you will need to have:
 * [Capella](https://www.eclipse.org/capella/download.html) - Open source MBSE tool to create system, software or hardware architectures
 
 
 ### Installing the source code
-  Before starting you should make sure that Capella Studio is well installed (mentioned above)
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before starting you should make sure that Capella Studio is well installed (mentioned above)
 
   **Step 1: Download the project**
 
@@ -38,15 +39,17 @@ To use the packaged version of the project you will need to have:
   This step is to integrate the developed Viewpoint into Capella 
 
   **Step 1 :**
+  Open viewpoint
   
   **Step 2 :**
+  activate viewpoint
   
   **Step 3 :**
-
+  
 
 ## Built With
 
-* [Capella Studio](http://download.eclipse.org/capella/capellastudio/products/release/1.3.1/capella-studio-1.3.1.201905211416-win32.win32.x86_64.zip) - Download link
+* [Capella Studio](https://www.eclipse.org/capella/download.html) - Download page
 
 
 ## Authors
