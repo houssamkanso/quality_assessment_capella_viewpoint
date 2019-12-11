@@ -44,8 +44,7 @@ To use the packaged version of the project you will need to have:
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 2 :**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Activate viewpoint
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate viewpoint
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 3 :**
   
