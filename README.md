@@ -54,6 +54,7 @@ To use the packaged version of the project you will need to have:
 
 
 ## References
-[Creation of viewpoint with Capella Studio 1.1](https://www.youtube.com/watch?v=zvIzyDxAj1c&t=301s)
-[Viewpoint: the making of. Customizing Capella with Capella Studio in 20 minutes](https://www.youtube.com/watch?v=lhNvmjHRa0o)
+[Creation of viewpoint with Capella Studio 1.1](https://www.youtube.com/watch?v=zvIzyDxAj1c&t=301s) - Youtube tutorial
+
+[Viewpoint: the making of. Customizing Capella with Capella Studio in 20 minutes](https://www.youtube.com/watch?v=lhNvmjHRa0o) - Youtube tutorial
 
