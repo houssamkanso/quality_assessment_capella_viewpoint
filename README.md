@@ -13,31 +13,31 @@ To use the packaged version of the project you will need to have:
 
 
 ### Installing the source code
-Before starting you should make sure that Capella Studio is well installed (mentioned above)
+  Before starting you should make sure that Capella Studio is well installed (mentioned above)
 
-**Step 1: Download the project**
+  **Step 1: Download the project**
 
-Clone the project to your local repository
+  Clone the project to your local repository
 
-**Step 2: Opening the project**
+  **Step 2: Opening the project**
 
-Use Capella Studio to open and edit the project
+  Use Capella Studio to open and edit the project
 
 ### Generating the viewpoint
-This step is to generate the viewpoint after editing the source code
+  This step is to generate the viewpoint after editing the source code
 
-**Generate**
-Right click in the .spec.vptext and click on Generate Viewpoint
+  **Generate**
+  Right click in the .spec.vptext and click on Generate Viewpoint
 
-**Generate and package**
-Right click in the .spec.vptext and click on Generate and Package Viewpoint
+  **Generate and package**
+  Right click in the .spec.vptext and click on Generate and Package Viewpoint
 
 ### Adding Viewpoint to Capella
-This step is to integrate the developed Viewpoint into Capella 
+  This step is to integrate the developed Viewpoint into Capella 
 
-**Step 1 :**
-**Step 2 :**
-**Step 3 :**
+  **Step 1 :**
+  **Step 2 :**
+  **Step 3 :**
 
 
 ## Built With
