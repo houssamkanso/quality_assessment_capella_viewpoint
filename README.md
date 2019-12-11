@@ -37,18 +37,24 @@ To use the packaged version of the project you will need to have:
 
 ### Adding Viewpoint to Capella
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This step is to integrate the developed Viewpoint into Capella 
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 1 : Add the viewpoint to Capella**
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copy the generated package into the repository of capella\eclipse\dropins 
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 1 :**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 2 : Open viewpoint**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open viewpoint
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows -> Show View -> Others
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 2 :**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Choose Viewpoint Manager under Kitalpha
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate viewpoint
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 3 : Reference the viewpoint**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 3 :**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Right click on the viewpoint and press Reference
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 4 : Layers**
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the layers button, press on the viewpoint in order to view the viewpoint tools in the palette and use it
 
 ## Built With
 
