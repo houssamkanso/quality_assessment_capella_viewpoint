@@ -1,0 +1,17 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+Viewpoint QualityAssessment {
+	name: "QualityAssessment"
+	Data QualityAssessment.data
+	UI QualityAssessment.ui
+	Diagrams QualityAssessment.diagram
+	Activity-Explorer QualityAssessment.activityexplorer
+	Services QualityAssessment.services
+	Configuration QualityAssessment.conf
+}

@@ -1,0 +1,35 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+Data QualityAssessment.data {
+	Class QualityAssessment 
+	{
+		//icon:
+		extends la.LogicalComponent, pa.PhysicalComponent
+		Attributes:
+			maturityLevel type ecore.EString
+			confidenceLevel enum ConfidenceLevel
+			assessed type ecore.EBoolean
+		Associations:
+			basedOn refers [0,*] QualityAssessment
+			measures contains [0,*] QualityMeasure
+	}
+	
+	Class QualityMeasure 
+	{
+		//icon:
+		Attributes:
+			criterion type ecore.EString
+			measureValue type ecore.EInt
+	}
+	
+	Enumeration ConfidenceLevel 
+	{ 
+		"Not Assessed", Low, Medium, High
+	}
+}

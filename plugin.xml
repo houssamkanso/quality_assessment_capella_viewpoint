@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.description"
+	        tags="vpdesc"
+	        name="qualityassessment"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.vpdesc"/>
+	</extension>
+
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.spec"
+	        tags="Viewpoint"
+	        name="spec"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.spec.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.data"
+	        tags="Viewpoint"
+	        name="data"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.data.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.conf"
+	        tags="Viewpoint"
+	        name="conf"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.conf.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.QualityAssessment.ui"
+	        tags="Viewpoint"
+	        name="ui"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.ui.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.QualityAssessment.diagram"
+	        tags="Viewpoint"
+	        name="diagram"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.diagram.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.QualityAssessment.services"
+	        tags="Viewpoint"
+	        name="services"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.services.vptext"/>
+	</extension>
+
+	<extension
+	     point="org.polarsys.kitalpha.resourcereuse.resources">
+	  <resource
+	        domain="vpdsl"
+	        id="org.polarsys.capella.vp.qualityassessment.vpdsl.resource.QualityAssessment.QualityAssessment.activityexplorer"
+	        tags="Viewpoint"
+	        name="activityexplorer"
+	        path="/org.polarsys.capella.vp.qualityassessment.vpdsl/model/QualityAssessment.activityexplorer.vptext"/>
+	</extension>
+</plugin>

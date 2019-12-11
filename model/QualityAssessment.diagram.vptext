@@ -1,0 +1,97 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+Diagrams QualityAssessment.diagram {
+	DiagramExtension "diagramExtension_9" {
+		extended-diagram: PhysicalArchitectureBlank //extended diagram
+		Mapping {
+			Container QualityAssessmentContainer {
+				import: PAB_PC //import a container
+				Contains {
+					
+					Container QualityAssessment{
+						domain-context: QualityAssessment.data.QualityAssessment provided-by association external emde.ExtensibleElement.ownedExtensions
+						Representation { 
+							Label {
+								content: "QualityAssessment" police: black
+							}
+							Style {
+								FlatStyle {background: light_blue foreground: white}
+							}
+						}
+						Contains { 
+							
+							Node QualityMeasure{
+								domain-context: QualityAssessment.data.QualityMeasure
+								provided-by association QualityAssessment.data.QualityAssessment.measures
+								Representation { 
+									Label {
+										content: "QualityMeasure" police: black position: node alignment: left
+									}
+									Style {
+										BasicStyle {border-color: black background: light_blue form: Square}
+									}
+								}
+							}
+						}
+					}
+				}
+				}
+				Edge QualityAssessment_basedOn {
+					association-context: QualityAssessment.data.QualityAssessment.basedOn
+					source: QualityAssessmentContainer.QualityAssessment
+					target: QualityAssessmentContainer.QualityAssessment
+					Representation {
+						Style {
+							end-decorator: InputArrow
+							color: black
+						}
+					}
+				}
+			}
+			Actions {
+				/* QualityAssessmentContainer Actions*/
+				Create QualityAssessment_CT_10{
+					label: "QualityAssessment" action-for: QualityAssessmentContainer.QualityAssessment
+				}
+				Drop QualityAssessment_DR_10{
+					action-for: QualityAssessmentContainer.QualityAssessment
+				}
+				Delete QualityAssessment_DL_10{
+					action-for: QualityAssessmentContainer.QualityAssessment
+				}
+		
+			
+			/*QualityAssessment Actions */
+			Create QualityAssessment_CT_11{
+				label: "QualityAssessment" action-for: QualityAssessmentContainer.QualityAssessment
+			}
+			Drop QualityAssessment_DT_11{
+				action-for: QualityAssessmentContainer.QualityAssessment
+			}
+			
+			/*QualityMeasure Actions */
+			Create QualityMeasure_CT_12{
+				label: "QualityMeasure" action-for: QualityAssessmentContainer.QualityAssessment.QualityMeasure
+			}
+			Drop QualityMeasure_DT_12{
+				action-for: QualityAssessmentContainer.QualityAssessment.QualityMeasure
+			}
+			/*QualityAssessment_basedOn Actions */ 
+			Create QualityAssessment_basedOn_CT {
+				label: "QualityAssessment_basedOn" action-for: QualityAssessment_basedOn
+			}
+			Delete QualityAssessment_basedOn_DT {
+				action-for: QualityAssessment_basedOn
+			}
+			ReconnectEdge QualityAssessment_basedOn_RET {
+				action-for: QualityAssessment_basedOn
+			}
+		}
+	}
+}

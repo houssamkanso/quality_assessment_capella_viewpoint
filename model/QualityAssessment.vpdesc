@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vpdesc:Viewpoint xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commondata="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/commondata/1.0.0" xmlns:configuration="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpdiagram/conf/1.0.0" xmlns:docGenConfiguration="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/DocGenConfiguration/1.0.0" xmlns:expression="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpdiagram/expression/1.0.0" xmlns:viewpointactivityexplorer="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/viewpointactivityexplorer/1.0.0" xmlns:vpconf="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpconf/1.0.0" xmlns:vpdesc="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpdesc/1.0.0" xmlns:vpdiagram="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpdiagram/1.0.0" xmlns:vpservices="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpservices/1.0.0" xmlns:vpui="http://www.polarsys.org/kitalpha/ad/viewpoint/dsl/as/vpui/1.0.0" name="QualityAssessment" shortName="QualityAssessment">
+  <VP_Data name="QualityAssessment.data">
+    <VP_Classes name="QualityAssessment">
+      <VP_Classes_Associations xsi:type="vpdesc:LocalClassAssociation" name="basedOn" cardinality="0..*" type="reference" LocalTarget="//@VP_Data/@VP_Classes.0"/>
+      <VP_Classes_Associations xsi:type="vpdesc:LocalClassAssociation" name="measures" cardinality="0..*" LocalTarget="//@VP_Data/@VP_Classes.1"/>
+      <VP_Class_Attributes name="maturityLevel">
+        <owned_type xsi:type="vpdesc:ExternalAttributeType">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </owned_type>
+      </VP_Class_Attributes>
+      <VP_Class_Attributes name="confidenceLevel">
+        <owned_type xsi:type="vpdesc:LocalAttributeType" type="//@VP_Data/@VP_Enumerations.0"/>
+      </VP_Class_Attributes>
+      <VP_Class_Attributes name="assessed">
+        <owned_type xsi:type="vpdesc:ExternalAttributeType">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </owned_type>
+      </VP_Class_Attributes>
+      <extends href="http://www.polarsys.org/capella/core/la/1.3.0#//LogicalComponent"/>
+      <extends href="http://www.polarsys.org/capella/core/pa/1.3.0#//PhysicalComponent"/>
+    </VP_Classes>
+    <VP_Classes name="QualityMeasure">
+      <VP_Class_Attributes name="criterion">
+        <owned_type xsi:type="vpdesc:ExternalAttributeType">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </owned_type>
+      </VP_Class_Attributes>
+      <VP_Class_Attributes name="measureValue">
+        <owned_type xsi:type="vpdesc:ExternalAttributeType">
+          <type href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+        </owned_type>
+      </VP_Class_Attributes>
+    </VP_Classes>
+    <VP_Enumerations name="ConfidenceLevel">
+      <ownedValues name="Not_Assessed" literal="Not Assessed"/>
+      <ownedValues name="Low" literal="Low"/>
+      <ownedValues name="Medium" literal="Medium"/>
+      <ownedValues name="High" literal="High"/>
+    </VP_Enumerations>
+  </VP_Data>
+  <VP_Aspects xsi:type="vpconf:Configuration" name="QualityAssessment.conf">
+    <vpConfigurationElements xsi:type="vpconf:TargetApplication" type="Capella"/>
+    <vpConfigurationElements xsi:type="vpconf:GenerationConfiguration" projectName="org.polarsys.capella.vp.qualityassessment" nsuri="http://www.polarsys.org/capella/QualityAssessment"/>
+    <vpConfigurationElements xsi:type="vpconf:Release" viewpointVersion="1.0.0.qualifier" viewpointDescription="Viewpoint Description">
+      <requiredExecutionEnvironment>JavaSE-1.6</requiredExecutionEnvironment>
+    </vpConfigurationElements>
+    <vpConfigurationElements xsi:type="vpconf:Generation">
+      <ownedDataGenerationConf/>
+      <ownedExtensionGenConf xsi:type="configuration:DiagramGenerationConfiguration" overwriteVSM="true"/>
+      <ownedExtensionGenConf xsi:type="docGenConfiguration:DocumentationGenerationConfiguration"/>
+    </vpConfigurationElements>
+  </VP_Aspects>
+  <VP_Aspects xsi:type="vpui:UIDescription" name="QualityAssessment.ui">
+    <UIs name="QualityAssessment_QualityAssessment" label="Quality Assessment">
+      <UI_Containers name="QualityAssessment_QualityAssessment_Section">
+        <subContainers name="QualityAssessment_QualityAssessment_AttributeGroup" label="Quality Assessment Attributes">
+          <UI_fields name="maturityLevelField" label="Maturity Level">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.0/@VP_Class_Attributes.0"/>
+          </UI_fields>
+          <UI_fields name="confidenceLevelField" label="Confidence Level" type="radiobox">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.0/@VP_Class_Attributes.1"/>
+          </UI_fields>
+          <UI_fields name="assessedField" label="Assessed" type="checkbox">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.0/@VP_Class_Attributes.2"/>
+          </UI_fields>
+        </subContainers>
+        <subContainers name="QualityAssessment_QualityAssessment_AssociationGroup" label="Quality Assessment Associations">
+          <UI_fields name="basedOnAssociation" label="Based On" type="multipleChoiceList">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.0/@VP_Classes_Associations.0"/>
+          </UI_fields>
+          <UI_fields name="measuresAssociation" label="Measures" type="multipleChoiceList">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.0/@VP_Classes_Associations.1"/>
+          </UI_fields>
+        </subContainers>
+      </UI_Containers>
+    </UIs>
+    <UIs name="QualityAssessment_QualityMeasure" label="Quality Assessment">
+      <UI_Containers name="QualityAssessment_QualityMeasure_Section">
+        <subContainers name="QualityAssessment_QualityMeasure_AttributeGroup" label="Quality Measure Attributes">
+          <UI_fields name="criterionField" label="Criterion">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.1/@VP_Class_Attributes.0"/>
+          </UI_fields>
+          <UI_fields name="measureValueField" label="Measure Value">
+            <Mapping UI_Field_Mapped_To="//@VP_Data/@VP_Classes.1/@VP_Class_Attributes.1"/>
+          </UI_fields>
+        </subContainers>
+      </UI_Containers>
+    </UIs>
+  </VP_Aspects>
+  <VP_Aspects xsi:type="vpdiagram:DiagramSet" name="QualityAssessment.diagram">
+    <diagrams xsi:type="vpdiagram:DiagramExtension" name="diagramExtension_9">
+      <the_MappingSet>
+        <diagram_Elements xsi:type="vpdiagram:Container" name="QualityAssessmentContainer">
+          <imports href="../../../plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='PAB_PC']"/>
+          <children>
+            <owned_nodes xsi:type="vpdiagram:Container" name="QualityAssessment">
+              <the_domain>
+                <domain_Class xsi:type="commondata:LocalClass" class="//@VP_Data/@VP_Classes.0"/>
+                <chlidren_list xsi:type="commondata:ExternalAssociation">
+                  <reference href="http://www.polarsys.org/kitalpha/emde/1.0.0#//ExtensibleElement/ownedExtensions"/>
+                </chlidren_list>
+              </the_domain>
+              <style>
+                <node_Label>
+                  <value>
+                    <expressionElements xsi:type="expression:StringElement" value="QualityAssessment"/>
+                  </value>
+                </node_Label>
+                <style xsi:type="vpdiagram:FlatStyle" backgroundColor="light_blue" forgroundColor="white"/>
+              </style>
+              <children>
+                <owned_nodes xsi:type="vpdiagram:Node" name="QualityMeasure">
+                  <the_domain>
+                    <domain_Class xsi:type="commondata:LocalClass" class="//@VP_Data/@VP_Classes.1"/>
+                    <chlidren_list xsi:type="commondata:LocalAssociation" reference="//@VP_Data/@VP_Classes.0/@VP_Classes_Associations.1"/>
+                  </the_domain>
+                  <style label_position="node" label_alignement="LEFT">
+                    <node_Label>
+                      <value>
+                        <expressionElements xsi:type="expression:StringElement" value="QualityMeasure"/>
+                      </value>
+                    </node_Label>
+                    <style xsi:type="vpdiagram:BasicStyle" backgroundColor="light_blue"/>
+                  </style>
+                </owned_nodes>
+              </children>
+            </owned_nodes>
+          </children>
+        </diagram_Elements>
+        <diagram_Elements xsi:type="vpdiagram:Edge" name="QualityAssessment_basedOn" source="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0" target="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0">
+          <e_description>
+            <style endDecorator="InputArrow"/>
+          </e_description>
+          <the_domain>
+            <target_Locator xsi:type="commondata:LocalAssociation" reference="//@VP_Data/@VP_Classes.0/@VP_Classes_Associations.0"/>
+          </the_domain>
+        </diagram_Elements>
+      </the_MappingSet>
+      <the_ActionSet>
+        <actions xsi:type="vpdiagram:Create" name="QualityAssessment_CT_10" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0" label="QualityAssessment"/>
+        <actions xsi:type="vpdiagram:Drop" name="QualityAssessment_DR_10" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0"/>
+        <actions xsi:type="vpdiagram:Delete" name="QualityAssessment_DL_10" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0"/>
+        <actions xsi:type="vpdiagram:Create" name="QualityAssessment_CT_11" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0" label="QualityAssessment"/>
+        <actions xsi:type="vpdiagram:Drop" name="QualityAssessment_DT_11" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0"/>
+        <actions xsi:type="vpdiagram:Create" name="QualityMeasure_CT_12" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0/@children/@owned_nodes.0" label="QualityMeasure"/>
+        <actions xsi:type="vpdiagram:Drop" name="QualityMeasure_DT_12" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.0/@children/@owned_nodes.0/@children/@owned_nodes.0"/>
+        <actions xsi:type="vpdiagram:Create" name="QualityAssessment_basedOn_CT" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.1" label="QualityAssessment_basedOn"/>
+        <actions xsi:type="vpdiagram:Delete" name="QualityAssessment_basedOn_DT" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.1"/>
+        <actions xsi:type="vpdiagram:ReconnectEdge" name="QualityAssessment_basedOn_RET" tool_For="//@VP_Aspects.2/@diagrams.0/@the_MappingSet/@diagram_Elements.1"/>
+      </the_ActionSet>
+      <extented_diagram href="../../../plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']/@ownedRepresentations[name='Physical%20Architecture%20Blank']"/>
+    </diagrams>
+  </VP_Aspects>
+  <VP_Aspects xsi:type="vpservices:ServiceSet" name="QualityAssessment.services">
+    <vpServices name="MyService" relatedRules="//@VP_Aspects.4/@vpRules.0 //@VP_Aspects.4/@vpRules.1"/>
+  </VP_Aspects>
+  <VP_Aspects xsi:type="vpservices:RuleSet" name="QualityAssessment.rules">
+    <vpRules name="RuleOne"/>
+    <vpRules name="RuleTwo"/>
+  </VP_Aspects>
+  <VP_Aspects xsi:type="viewpointactivityexplorer:ViewpointActivityExplorer" name="QualityAssessment.activityexplorer">
+    <ownedPages xsi:type="viewpointactivityexplorer:Page" name="CapellaViewpoints" activityExplorerItemID="org.polarsys.capella.vp" index="7" label="Capella Viewpoint" tabName="Capella Viewpoints" showViewer="true" fileExtensions="melodymodeller">
+      <ownedSections name="QualityAssessmentVP" description="&lt;p>description&lt;/p>" activityExplorerItemID="org.polarsys.capella.vp.qualityassessment" index="1" label="Quality Assessment" filtering="true">
+        <ownedActivities name="QualityAssessmentActionName" description="description" activityExplorerItemID="org.polarsys.capella.vp.qualityassessment.MyQAAction" index="1" label="My QA Action"/>
+      </ownedSections>
+      <ownedOverview description="&lt;p>&lt;b>Viewpoints&lt;/b>&lt;/p>&lt;p>Capella Viewpoints&lt;/p>"/>
+    </ownedPages>
+  </VP_Aspects>
+</vpdesc:Viewpoint>

@@ -1,0 +1,34 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+Configuration QualityAssessment.conf {
+	target Capella
+	project org.polarsys.capella.vp.qualityassessment
+	nsuri "http://www.polarsys.org/capella/QualityAssessment"
+	release {
+		version : 1.0.0.qualifier
+		description : "Viewpoint Description"
+		execution environments : "JavaSE-1.6"
+	}
+	generation {
+		data (
+			Model: true
+			Edit: true
+			Editor: false
+			Test: false
+			Javadoc: false
+			OverwriteEcore: true
+		)
+		diagram (
+			OverwriteOdesign: true
+		)
+		documentation (
+			EcoreToHtml: false
+		)
+	}
+}

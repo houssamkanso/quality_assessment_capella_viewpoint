@@ -1,0 +1,37 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment.ui
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+UIDescription QualityAssessment.ui {
+	UI QualityAssessment_QualityAssessment {
+		label: "Quality Assessment"
+		Container QualityAssessment_QualityAssessment_Section {
+			Container QualityAssessment_QualityAssessment_AttributeGroup {
+				label: "Quality Assessment Attributes"
+				Field maturityLevelField label: "Maturity Level" type text , mapped-to QualityAssessment.data.QualityAssessment.maturityLevel
+				Field confidenceLevelField label: "Confidence Level" type radiobox , mapped-to QualityAssessment.data.QualityAssessment.confidenceLevel
+				Field assessedField label: "Assessed" type checkbox , mapped-to QualityAssessment.data.QualityAssessment.assessed
+			}
+			Container QualityAssessment_QualityAssessment_AssociationGroup {
+				label: "Quality Assessment Associations"
+				Field basedOnAssociation label: "Based On" type multipleChoiceList , mapped-to QualityAssessment.data.QualityAssessment.basedOn
+				Field measuresAssociation label: "Measures" type multipleChoiceList , mapped-to QualityAssessment.data.QualityAssessment.measures
+			}
+		}
+	}
+	UI QualityAssessment_QualityMeasure {
+		label: "Quality Assessment"
+		Container QualityAssessment_QualityMeasure_Section {
+			Container QualityAssessment_QualityMeasure_AttributeGroup {
+				label: "Quality Measure Attributes"
+				Field criterionField label: "Criterion" type text , mapped-to QualityAssessment.data.QualityMeasure.criterion
+				Field measureValueField label: "Measure Value" type text , mapped-to QualityAssessment.data.QualityMeasure.measureValue
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,18 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+Rules QualityAssessment.rules {
+	Rule RuleOne type Java
+	Rule RuleTwo type Java
+	
+}
+
+Services QualityAssessment.services {
+	Service MyService orchestrates RuleOne, RuleTwo
+	
+}

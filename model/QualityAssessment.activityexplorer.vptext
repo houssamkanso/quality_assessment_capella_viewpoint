@@ -1,0 +1,49 @@
+/**
+ * Copyright (c) PolarSys, 2019. All rights reserved. 
+ *
+ *	Viewpoint QualityAssessment
+ *	@author: hkanso
+ *	@date: 12/3/19
+ *
+ */
+activity-explorer QualityAssessment.activityexplorer {
+pages {
+	page CapellaViewpoints {
+		file-extension "melodymodeller"
+		id org.polarsys.capella.vp
+		label "Capella Viewpoint"
+		index 7
+		Overview {
+			description "<p><b>Viewpoints</b></p><p>Capella Viewpoints</p>"
+			//image-on :  "OverviewImagePathOn"
+			//image-off : "OverviewImagePathOff"
+		}
+		header {
+			//image-on : "PageImagePathOn"
+			//image-off : "PageImagePathOff"
+		}
+		tab-name  "Capella Viewpoints"
+		show-viewer : true
+		sections {
+			section QualityAssessmentVP {
+				description "<p>description</p>"
+				id org.polarsys.capella.vp.qualityassessment
+				label "Quality Assessment"
+				index 1
+				filtering : true
+				expanded : false
+				activities {
+					activity QualityAssessmentActionName {
+						description "description"
+						id org.polarsys.capella.vp.qualityassessment.MyQAAction
+						label "My QA Action"
+						index 1
+						predicated : false
+						//icon : "iconPath"
+					}
+				}
+			}
+		}
+	}
+}
+}
