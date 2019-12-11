@@ -9,7 +9,7 @@ This projects has the source code of the viewpoint and the generated and package
 To change in the source code you will need to have:
 * [Capella Studio](https://www.eclipse.org/capella/download.html) - Open source SDK to develop Capella add-ons
 
-To use the packaged version of the project you will need to have:
+To use the packaged version of the project (QualityAssessment_201912031504.zip) you will need to have:
 * [Capella](https://www.eclipse.org/capella/download.html) - Open source MBSE tool to create system, software or hardware architectures
 
 
@@ -40,7 +40,7 @@ To use the packaged version of the project you will need to have:
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 1 : Add the viewpoint to Capella**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copy the generated package into the repository of capella\eclipse\dropins 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copy the generated package (Extracted) into the repository of capella/eclipse/dropins 
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 2 : Open viewpoint**
   
