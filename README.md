@@ -13,7 +13,7 @@ To use the packaged version of the project you will need to have:
 
 
 ### Installing the source code
-Before starting you should make sure that Capella Studio is well installed (Check [Capella Studio](http://download.eclipse.org/capella/capellastudio/products/release/1.3.1/capella-studio-1.3.1.201905211416-win32.win32.x86_64.zip))
+Before starting you should make sure that Capella Studio is well installed (mentioned above)
 
 **Step 1: Download the project**
 Clone the project to your local repository
