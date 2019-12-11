@@ -16,9 +16,11 @@ To use the packaged version of the project you will need to have:
 Before starting you should make sure that Capella Studio is well installed (mentioned above)
 
 **Step 1: Download the project**
+
 Clone the project to your local repository
 
 **Step 2: Opening the project**
+
 Use Capella Studio to open and edit the project
 
 ### Generating the viewpoint
