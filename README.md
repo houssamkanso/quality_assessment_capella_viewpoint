@@ -54,7 +54,11 @@ To use the packaged version of the project you will need to have:
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 4 : Layers**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the layers button, press on the viewpoint in order to view the viewpoint tools in the palette and use it
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the layers button, press on the viewpoint in order to view the viewpoint tools in the palette
+	
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 5 : Use the viewpoint**
+  
+  ![alt text](/img/Capella Studio.png)
 
 ## Built With
 
