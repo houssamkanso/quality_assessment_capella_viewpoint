@@ -58,7 +58,7 @@ To use the packaged version of the project (QualityAssessment_201912031504.zip) 
 	
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 5 : Use the viewpoint**
   
-  ![alt text](/img/Capella Studio.png)
+  ![alt text](https://github.com/houssamkanso/basiccapellaviewpoint/blob/master/img/Capella%20Studio.png)
 
 ## Built With
 
