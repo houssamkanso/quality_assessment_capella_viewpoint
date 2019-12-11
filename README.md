@@ -38,13 +38,17 @@ To use the packaged version of the project you will need to have:
 ### Adding Viewpoint to Capella
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This step is to integrate the developed Viewpoint into Capella 
 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 1 :**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 1 :**
+  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Open viewpoint
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 2 :**
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Activate viewpoint
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 2 :**
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Step 3 :**
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Activate viewpoint
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Step 3 :**
+  
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
 ## Built With
