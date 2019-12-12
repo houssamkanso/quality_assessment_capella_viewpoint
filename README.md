@@ -74,3 +74,5 @@ To use the packaged version of the project (QualityAssessment_201912031504.zip) 
 
 [Viewpoint: the making of. Customizing Capella with Capella Studio in 20 minutes](https://www.youtube.com/watch?v=lhNvmjHRa0o) - Youtube tutorial
 
+[Viewpoint Creation for Capella with Capella Studio](https://www.youtube.com/watch?v=NWCyKsPfc2Y&t=232s) - Youtube tutorial
+
