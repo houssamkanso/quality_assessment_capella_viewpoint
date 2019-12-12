@@ -1,9 +1,9 @@
-# Basic Capella Viewpoint
+# Quality Assessment Capella Viewpoint
 This project a basic Capella Viewpoint for **quality assessment** developed with Capella Studio
 
 ## Getting Started
 
-This projects has the source code of the viewpoint and the generated and packaged viewpoint
+This projects has the source code of the viewpoint and the packaged viewpoint (For direct use).
 
 ### Prerequisites
 To change in the source code you will need to have:
