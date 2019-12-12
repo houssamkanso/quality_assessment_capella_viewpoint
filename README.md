@@ -1,5 +1,5 @@
 # Basic Capella Viewpoint
-This project a basic Capella Viewpoint for quality assessment developed with Capella Studio
+This project a basic Capella Viewpoint for **quality assessment** developed with Capella Studio
 
 ## Getting Started
 
